@@ -1,5 +1,7 @@
 package com.mycompany.invoice;
 
+import com.mycompany.invoice.controller.InvoiceController;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        InvoiceController invoiceController = new InvoiceController();
+        invoiceController.createInvoiceUsingConsole();
     }
 }
