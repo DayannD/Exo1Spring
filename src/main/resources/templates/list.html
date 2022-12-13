@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>invoice</h1>
+    <table border="1">
+        <tr th:each="invoice: ${invoices}">
+            <td th:text="${invoice.number}"></td>
+            <td th:text="${invoice.customerInvoice}"></td>
+        </tr>
+    </table>
+</body>
+</html>
